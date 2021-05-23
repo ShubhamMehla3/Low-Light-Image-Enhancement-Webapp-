@@ -25,7 +25,7 @@ SECRET_KEY = 'fam!qkvia-(6o5%mtztyuu#h1#a#sl0yo_v3bd0flzg%)&tm64'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
  
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['digital-vision.herokuapp.com','127.0.0.1','127.0.0.1/predictImage']
 
 
 # Application definition
