@@ -23,8 +23,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'fam!qkvia-(6o5%mtztyuu#h1#a#sl0yo_v3bd0flzg%)&tm64'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
+DEBUG = True
+ 
 ALLOWED_HOSTS = []
 
 
@@ -130,6 +130,6 @@ VENV_PATH = os.path.dirname(BASE_DIR)
 
 STATIC_ROOT = os.path.join(VENV_PATH, 'static')
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static/')
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'static/')
+# ]
