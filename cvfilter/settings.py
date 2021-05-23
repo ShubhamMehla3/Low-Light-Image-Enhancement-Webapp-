@@ -50,7 +50,7 @@ MIDDLEWARE_CLASSES = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'cvfilter.cvfilter.urls'
+ROOT_URLCONF = 'cvfilter.urls'
 
 # ROOT_URLCONF = 'projectname.projectname.urls'
 
