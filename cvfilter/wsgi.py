@@ -11,6 +11,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "cvfilter.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "cvfilter.cvfilter.settings")
+# os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'projectname.projectname.settings')
 
 application = get_wsgi_application()

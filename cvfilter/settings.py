@@ -50,7 +50,9 @@ MIDDLEWARE_CLASSES = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'cvfilter.urls'
+ROOT_URLCONF = 'cvfilter.cvfilter.urls'
+
+# ROOT_URLCONF = 'projectname.projectname.urls'
 
 TEMPLATES = [
     {
@@ -130,6 +132,8 @@ VENV_PATH = os.path.dirname(BASE_DIR)
 
 STATIC_ROOT = os.path.join(VENV_PATH, 'static')
 
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, 'static/')
-# ]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static/')
+]
+
+# ROOT_URLCONF = 'projectname.projectname.urls'
