@@ -8,8 +8,8 @@ from keras.models import load_model
 from keras.preprocessing import image
 import tensorflow as tf
 import json
-from tensorflow import Graph
-from tensorflow.compat.v1 import Session
+# from tensorflow import Graph
+# from tensorflow.compat.v1 import Session
 import numpy as np
 import cv2
 import base64
@@ -18,11 +18,11 @@ from io import BytesIO
 img_height , img_width = 400,600
 
 #model = load_model('models/model_rec.h5')
-model_graph = Graph()
-with model_graph.as_default():
-    tf_session = Session()
-    with tf_session.as_default():
-        model = load_model('models/model_rec.h5')
+# model_graph = Graph()
+# with model_graph.as_default():
+#     tf_session = Session()
+#     with tf_session.as_default():
+model = load_model('models/model_rec.h5')
 
 def Enhance(img, index, flag):
     if index == 0:
@@ -30,9 +30,9 @@ def Enhance(img, index, flag):
 
     elif flag == 1:
         h, w, c = img.shape
-        with model_graph.as_default():
-            with tf_session.as_default():
-                test = model.predict(img.reshape(1, h, w, 3))  
+        # with model_graph.as_default():
+        #     with tf_session.as_default():
+        test = model.predict(img.reshape(1, h, w, 3))  
         temp = img / 255
         image = temp + ((test[0,:,:,:] * temp)*(1-temp))
         index = index - 1
@@ -41,9 +41,9 @@ def Enhance(img, index, flag):
 
     else:
         h, w, c = img.shape
-        with model_graph.as_default():
-            with tf_session.as_default():
-                temp = model.predict(img.reshape(1, h, w, 3))
+        # with model_graph.as_default():
+        #     with tf_session.as_default():
+        temp = model.predict(img.reshape(1, h, w, 3))
         image = img + ((temp[0,:,:,:] * img)*(1-img))
         index = index - 1
         return Enhance(image, index, flag)
