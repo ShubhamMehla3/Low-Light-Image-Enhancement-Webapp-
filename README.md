@@ -70,10 +70,21 @@ To obtain better enhancement result, we linearly amplify the output of the netwo
 
 ![mbllen-synthetic-dataset-result](https://user-images.githubusercontent.com/65397085/122345582-a31a7a00-cf65-11eb-9a85-db4bd9c13b8f.jpg)
 
+## Running Locally
+```sh
+$ git clone https://github.com/ShubhamMehla3/Low-Light-Image-Enhancement-Webapp-.git
+$ cd cvfilter
+
+$ python3 -m venv getting-started
+$ pip install -r requirements.txt
+
+
+$ python manage.py runserver
+
+```
+
+
 ## Web Hosting on Local Server
 ![MBLLEN Web App](https://user-images.githubusercontent.com/66743388/122350072-816fc180-cf6a-11eb-9814-a41f0e02e85d.gif)
-
-## Some Issues On Web Hosting
-- We tried to host the web app on heroku hosting website.But we couldn't do that becuase there is some slag size issue on the herku.
 
 
