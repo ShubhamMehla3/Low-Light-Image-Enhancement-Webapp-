@@ -72,18 +72,15 @@ To obtain better enhancement result, we linearly amplify the output of the netwo
 
 ## Running Locally
 ```sh
-$ git clone https://github.com/heroku/python-getting-started.git
-$ cd python-getting-started
+$ git clone https://github.com/ShubhamMehla3/Low-Light-Image-Enhancement-Webapp-.git
+$ cd cvfilter
 
 $ python3 -m venv getting-started
 $ pip install -r requirements.txt
 
-$ createdb python_getting_started
 
-$ python manage.py migrate
-$ python manage.py collectstatic
+$ python manage.py runserver
 
-$ heroku local
 ```
 
 
