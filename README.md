@@ -34,8 +34,8 @@ We have used LOL Dataset and the Dataset Provided by MBLLEN
 
 To obtain better enhancement result, we linearly amplify the output of the network to improve contrast. Please read the code to see other parameter settings. 
 
-![](figs/figure2.png)
+![me](https://user-images.githubusercontent.com/65397085/122344040-fc81a980-cf63-11eb-9a7f-d50068d5e2f8.jpg)
 
-![](figs/reallowlight.png)
+
 
 
