@@ -25,7 +25,8 @@ We have used LOL Dataset and the Dataset Provided by MBLLEN
 
 - [x] python 3  
 - [x] Tensorflow 1.6.0
+- [x] Django  
 - [x] Keras 2.2.0
+- [x] HTML/CSS
 - [x] Opencv-python 3.4.2
-- [ ] Django 
-- [ ] HTML/CSS 
+
