@@ -30,3 +30,12 @@ We have used LOL Dataset and the Dataset Provided by MBLLEN
 - [x] HTML/CSS
 - [x] Opencv-python 3.4.2
 
+## Performance on Real Lowlight Images
+
+To obtain better enhancement result, we linearly amplify the output of the network to improve contrast. Please read the code to see other parameter settings. 
+
+![](figs/figure2.png)
+
+![](figs/reallowlight.png)
+
+
