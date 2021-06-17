@@ -15,6 +15,9 @@ multi-branch low-light enhancement network (MBLLEN). The key idea is to extract 
 features up to different levels, so that we can apply enhancement via multiple subnets
 and finally produce the output image via multi-branch fusion.
 
+![NN-MBLLEN](https://user-images.githubusercontent.com/65397085/122346292-6a2ed500-cf66-11eb-9297-607ecd6ce496.jpg)
+
+
 ## Dataset
 We have used LOL Dataset and the Dataset Provided by MBLLEN 
 
