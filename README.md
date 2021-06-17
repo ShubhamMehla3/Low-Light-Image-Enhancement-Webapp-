@@ -8,7 +8,7 @@ including brightness, contrast, artifacts and noise.
 - To address this task, we propose the
 multi-branch low-light enhancement network (MBLLEN). The key idea is to extract rich
 features up to different levels, so that we can apply enhancement via multiple subnets
-and finally produce the output image via multi-branch fusion. dfkl
+and finally produce the output image via multi-branch fusion. 
 
 - To address this task, we propose the
 multi-branch low-light enhancement network (MBLLEN). The key idea is to extract rich
