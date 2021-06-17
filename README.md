@@ -56,7 +56,7 @@ We concatenate all the outputs from EM in the color channel dimension and use a 
 convolution kernel to merge them. This equals to the weighted sum with learnable weights.
 
 ![NN-MBLLEN](https://user-images.githubusercontent.com/65397085/122346292-6a2ed500-cf66-11eb-9297-607ecd6ce496.jpg)
-![MBLLEN WEBAPP](https://user-images.githubusercontent.com/66743388/122348401-bf6be600-cf68-11eb-8e8a-6b60881365a3.gif)
+
 
 
 ## Performance on Real Lowlight Images
@@ -70,5 +70,7 @@ To obtain better enhancement result, we linearly amplify the output of the netwo
 
 ![mbllen-synthetic-dataset-result](https://user-images.githubusercontent.com/65397085/122345582-a31a7a00-cf65-11eb-9a85-db4bd9c13b8f.jpg)
 
+## Web Hosting on Local Server
+![MBLLEN Web App](https://user-images.githubusercontent.com/66743388/122350072-816fc180-cf6a-11eb-9814-a41f0e02e85d.gif)
 
 
