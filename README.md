@@ -86,4 +86,5 @@ $ python manage.py runserver
 #### Demo of our website
 ![MBLLEN Web App](https://user-images.githubusercontent.com/66743388/122350072-816fc180-cf6a-11eb-9814-a41f0e02e85d.gif)
 
-
+### Issues While Deploying on Heroku:
+- we treid to hosting the our website on Heroku Free Hosting Website but we couldn't do that because we faced some slug size issue during hosting 
