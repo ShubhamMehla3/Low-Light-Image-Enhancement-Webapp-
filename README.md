@@ -83,8 +83,7 @@ $ python manage.py runserver
 
 ```
 
-
-## Web Hosting on Local Server
+#### Demo of our website
 ![MBLLEN Web App](https://user-images.githubusercontent.com/66743388/122350072-816fc180-cf6a-11eb-9814-a41f0e02e85d.gif)
 
 
