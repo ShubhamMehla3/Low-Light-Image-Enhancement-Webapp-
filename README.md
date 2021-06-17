@@ -15,7 +15,6 @@ multi-branch low-light enhancement network (MBLLEN). The key idea is to extract 
 features up to different levels, so that we can apply enhancement via multiple subnets
 and finally produce the output image via multi-branch fusion.
 
-![NN-MBLLEN](https://user-images.githubusercontent.com/65397085/122346292-6a2ed500-cf66-11eb-9297-607ecd6ce496.jpg)
 
 
 ## Dataset
@@ -55,6 +54,9 @@ simultaneously but individually without sharing any learnt parameters.
 - **FM** It accepts the outputs of all EM sub-nets to produce the finally enhanced image.
 We concatenate all the outputs from EM in the color channel dimension and use a 1 × 1
 convolution kernel to merge them. This equals to the weighted sum with learnable weights.
+
+![NN-MBLLEN](https://user-images.githubusercontent.com/65397085/122346292-6a2ed500-cf66-11eb-9297-607ecd6ce496.jpg)
+
 
 ## Performance on Real Lowlight Images
 
