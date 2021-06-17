@@ -30,6 +30,29 @@ We have used LOL Dataset and the Dataset Provided by MBLLEN
 - [x] HTML/CSS
 - [x] Opencv-python 3.4.2
 
+## Model 
+
+the proposed MBLLEN consists of three types of modules: the feature
+extraction module (FEM), the enhancement module (EM) and the fusion module (FM).
+
+- **FEM** It is a single stream network with 10 convolutional layers, each of which uses
+kernels of size 3 × 3, stride of 1 and ReLU nonlinearity, and there is no pooling operation.
+The input to the first layer is the low-light color image. The output of each layer is both the
+input to the next layer and also the input to the corresponding subnet of EM.
+
+- **EM** It contains multiple sub-nets, whose number equals to the number of layers in FEM.
+The input to a sub-net is the output of a certain layer in FEM, and the output is a color image
+with the same size of the original low-light image. Each sub-net has a symmetric structure to
+first apply convolutions and then deconvolutions. The first convolutional layer uses 8 kernels
+of size 3×3, stride 1 and ReLU nonlinearity. Then, there are three convolutional layers and
+three deconvolutional layers, using kernel size 5 × 5, stride 1 and ReLU nonlinearity, with
+kernel numbers of 16, 16, 16, 16, 8 and 3 respectively. Note that all the sub-nets are trained
+simultaneously but individually without sharing any learnt parameters.
+
+- **FM** It accepts the outputs of all EM sub-nets to produce the finally enhanced image.
+We concatenate all the outputs from EM in the color channel dimension and use a 1 × 1
+convolution kernel to merge them. This equals to the weighted sum with learnable weights.
+
 ## Performance on Real Lowlight Images
 
 To obtain better enhancement result, we linearly amplify the output of the network to improve contrast. Please read the code to see other parameter settings. 
